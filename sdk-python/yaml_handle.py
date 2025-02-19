@@ -1,6 +1,6 @@
 import yaml
-lab_file_path = '/root/MasterPilab_config.yaml'
-Deviation_file_path = '/root/MasterPiDeviation.yaml'
+lab_file_path = '/root/thuei-1/sdk-python/lab_config.yaml'
+Deviation_file_path = '/root/thuei-1/sdk-python/Deviation.yaml'
 
 def get_yaml_data(yaml_file):
     file = open(yaml_file, 'r', encoding='utf-8')

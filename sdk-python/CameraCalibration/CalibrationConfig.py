@@ -8,10 +8,10 @@ square_length = 3
 calibration_size = (7, 7)
 
 #采集标定图像存储路径
-save_path = '/root/MasterPiCameraCalibration/calibration_images/'
+save_path = '/root/thuei-1/sdk-python/CameraCalibration/calibration_images/'
 
 #标定参数存储路径
-calibration_param_path = '/root/MasterPiCameraCalibration/calibration_param'
+calibration_param_path = '/root/thuei-1/sdk-python/CameraCalibration/calibration_param'
 
 #映射参数存储路径
-map_param_path = '/root/MasterPiCameraCalibration/map_param'
+map_param_path = '/root/thuei-1/sdk-python/CameraCalibration/map_param'

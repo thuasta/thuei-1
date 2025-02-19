@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # encoding:utf-8
 import sys
-sys.path.append('/root/MasterPi')
+sys.path.append('/root/thuei-1/sdk-python/')
 import time
 import numpy as np
 from math import sqrt

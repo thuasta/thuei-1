@@ -2,7 +2,7 @@
 # encoding:utf-8
 import cv2
 import sys
-sys.path.append('/root/MasterPi')
+sys.path.append('/root/thuei-1/sdk-python/')
 import math
 import numpy as np
 from CameraCalibration.CalibrationConfig import *

@@ -2,7 +2,7 @@
 # coding=utf8
 import os
 import sys
-sys.path.append('/root/MasterPi')
+sys.path.append('/root/thuei-1/sdk-python/')
 import time
 import logging
 import threading

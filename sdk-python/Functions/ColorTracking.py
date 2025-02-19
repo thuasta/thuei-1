@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # coding=utf8
 import sys
-sys.path.append('/root/MasterPi')
+sys.path.append('/root/thuei-1/sdk-python/')
 import cv2
 import time
 import signal
