@@ -135,7 +135,7 @@ def stop():
     global __isRunning
     _stop = True
     __isRunning = False
-    set_rgb('None')
+    #set_rgb('None')
     print("ColorDetect Stop")
 
 # app退出玩法调用
@@ -144,7 +144,7 @@ def exit():
     global __isRunning
     _stop = True
     __isRunning = False
-    set_rgb('None')
+    #set_rgb('None')
     print("ColorDetect Exit")
 
 rect = None
@@ -168,8 +168,8 @@ def move():
         if __isRunning:
             if detect_color != 'None' and start_pick_up:  # 检测到色块
                 
-                set_rgb(detect_color) # 设置扩展板上的彩灯与检测到的颜色一样
-                setBuzzer(0.1)     # 设置蜂鸣器响0.1秒
+                #set_rgb(detect_color) # 设置扩展板上的彩灯与检测到的颜色一样
+                #setBuzzer(0.1)     # 设置蜂鸣器响0.1秒
                 
                 if detect_color == 'red' :  # 检测到红色,点头
                     for i in range(0,3):
@@ -184,7 +184,7 @@ def move():
                     time.sleep(0.5)  
                     detect_color = 'None'
                     start_pick_up = False
-                    set_rgb(detect_color)
+                    #set_rgb(detect_color)
                     
                 else:                      # 检测到绿色或者蓝色，则摇头
                     for i in range(0,3):
@@ -199,7 +199,7 @@ def move():
                     time.sleep(0.5)
                     detect_color = 'None'
                     start_pick_up = False
-                    set_rgb(detect_color)
+                    #set_rgb(detect_color)
             else:
                 time.sleep(0.01)
         else:
@@ -326,5 +326,6 @@ if __name__ == '__main__':
                 break
         else:
             time.sleep(0.01)
+    cap.release()
     cv2.destroyAllWindows()
 
