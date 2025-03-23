@@ -4,12 +4,12 @@ import sys
 sys.path.append('/root/thuei-1/sdk-python/')
 import time
 import yaml_handle
-# import OPi.GPIO as GPIO  # 注释GPIO导入
+import OPi.GPIO as GPIO  # 注释GPIO导入
 from smbus2 import SMBus, i2c_msg
 # 注释掉LED相关导入
 # from rpi_ws281x import PixelStrip
 # from rpi_ws281x import Color as PixelColor
-
+from ai_pro_pin_map import _Board
 #幻尔科技raspberrypi扩展板sdk#
 if sys.version_info.major == 2:
     print('Please run this program with python3!')
@@ -28,11 +28,8 @@ __servo_pulse = [0, 0, 0, 0, 0, 0]
 __i2c = 7
 __i2c_addr = 0x7A
 
-# 注释掉GPIO相关设置
-'''
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD)
-'''
+GPIO.setmode(_BOARD)
 
 # 注释掉RGB LED相关代码
 '''
@@ -214,11 +211,9 @@ def getBattery():
     return ret
 
 # 注释掉蜂鸣器相关函数
-'''
 def setBuzzer(new_state):
     GPIO.setup(31, GPIO.OUT)
     GPIO.output(31, new_state)
-'''
 
 def setBusServoID(oldid, newid):
     """
